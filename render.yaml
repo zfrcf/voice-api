@@ -2,6 +2,6 @@ services:
   - type: web
     name: voice-api
     env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
     plan: free
-    buildCommand: ""
-    startCommand: ./start.sh
